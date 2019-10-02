@@ -1,0 +1,48 @@
+[
+  {
+    "keys": ["ctrl+alt+f"],
+    "command": "phpfmt",
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.php" }
+    ]
+  },
+  {
+    "keys": ["ctrl+shift+f"],
+  "command": "HTMLPrettify",
+  "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.html, source.css"
+    }
+  ]
+  },
+  {
+    "keys": ["tab"],
+    "command": "expand_abbreviation_by_tab",
+    "context": [
+      {
+        "operand": "source.js",
+        "operator": "equal",
+        "match_all": true,
+        "key": "selector"
+      },
+      { "match_all": true, "key": "selection_empty" },
+      {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "has_next_field"
+      },
+      {
+        "operand": false,
+        "operator": "equal",
+        "match_all": true,
+        "key": "auto_complete_visible"
+      },
+      { "match_all": true, "key": "is_abbreviation" }
+    ]
+  },
+  { "keys": ["ctrl+alt+f"], "command": "js_prettier" },
+  { "keys": ["ctrl+alt+t"], "command": "terminal_view_open" }
+]

@@ -1,0 +1,19 @@
+[user]
+	email = pvlt.job@gmail.com
+	name = Pavel Sukhodolskii
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+[push]
+	default = simple
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[color]
+	ui = auto
+[web]
+    browser = chromium
+[github]
+    user = pavletto
+

@@ -1,0 +1,18 @@
+# General
+log/
+*.log
+
+# Vi
+*~
+
+# Subl
+sftp-config.json
+*.sublime-project
+*.sublime-workspace
+
+# Node
+npm-debug.log
+node_modules
+
+linkserver.properties
+

@@ -1,0 +1,128 @@
+URxvt*scrollBar:        false
+URxvt*saveLines:        10000
+URxvt*skipBuiltinGlyphs:    true
+
+!!Rofi
+! Enable the extended coloring options
+rofi.color-enabled: true
+
+! Property Name     BG       Border   Separator
+rofi.color-window:  #073642, #073642, #2aa198
+
+! Property Name     BG       FG       BG-alt   Head-BG  Head-FG
+rofi.color-normal:  #073642, #93a1a1, #073642, #073642, #fdf6e3
+rofi.color-active:  #d33682, #268bd2, #d33682, #d33682, #268bd2
+rofi.color-urgent:  #073642, #dc322f, #073642, #073642, #dc322f
+
+! Set the desired separator style
+rofi.separator-style: solid
+rofi.bw: 1
+!rofi.color-active:   #d33682
+rofi.padding: 16
+
+rofi.yoffset: 0
+rofi.fake-transparency: false
+rofi.location: 0
+rofi.eh: 1
+rofi.width: 50
+rofi.lines: 15
+rofi.fixed-num-lines: true
+!Colorscheme
+!!Source http://github.com/altercation/solarized
+
+*background: #002b36
+*foreground: #657b83
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+
+! Font
+! URxvt*font: 
+
+URxvt.font:         xft:Hack-Regular:pixelsize=16,xft:Symbola
+URxvt.boldFont:     xft:Hack-Bold:pixelsize=16:weight=bold,xft:Symbola
+URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=16:slant=italic,xft:Symbola
+URxvt.utf8: true
+URxvt.locale: true                                                                                                                                                                                          
+URxvt*letterSpace: -1
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.dpi: 102
+! Plugins
+!https://github.com/pkkolos/urxvt-scripts
+URxvt.perl-ext-common:  default,matcher,keyboard-select,font-size,url-select
+
+! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! url-select
+!
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.urlLauncher:      chromium
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.colorUL:          #d33682
+URxvt.underlineURLs:    true
+
+! matcher
+URxvt.matcher.button:   1
+
+! resize-font
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+!color (https://github.com/sos4nt/dynamic-colors)
+URxvt*dynamicColors: on
+URxvt.keysym.F12: perl:urxvt-colors:
