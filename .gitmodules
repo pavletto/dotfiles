@@ -1,3 +1,6 @@
 [submodule "urxvt/ext"]
 	path = urxvt/ext
 	url = https://github.com/pkkolos/urxvt-scripts.git
+[submodule "config/awesome/calendar"]
+	path = config/awesome/calendar
+	url = https://github.com/deficient/calendar.git
